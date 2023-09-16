@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- SIMPLE CODE to check all the characters of one string in another -->
+</body>
+<script>
+    let str1="m3rnMme"
+    let str2="rnmM3em"
+    function test(str1,str2){
+        let arr=[]
+        let narr=[]
+        for(let i in str2){
+            narr.push(str2[i])
+        }
+        let equal="equal"
+        let nequal="not equal"
+        for(let i in str1){
+            for(let j in str2){
+                
+                if(str1.includes(str2.charAt(j))){
+                    arr.push(equal)
+
+                    continue
+                }
+                else{
+                    arr.push(nequal)
+                    continue
+                }   
+            }
+        break        
+        }
+        // var count=0
+        // let duplicateItems = narr.filter((item, index) => narr.indexOf(item) != index);
+        // if(duplicateItems){
+        //     if(duplicateItems.length>0){
+        //         count++
+        //     }
+            
+        // }
+        console.log(narr)
+        
+        for(let i in arr){
+            
+            if(arr[i]==="not equal"  || arr.length>str1.length ||arr.length<str1.length ){
+                document.write("not equal")
+                break
+            }      
+
+        }
+    }
+    test(str1, str2)
+</script>
+</html>
