@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let input="My name is Mudasir Irshad"
+document.write(`${input} <br />`)
+let arr=[]
+let narr=[]
+for(let i in input){
+    if(input.charAt(i)==" "){
+        continue
+    }
+    arr.push(input[i])
+}
+arr.sort()
+console.log(arr);
+for(let i =0; i<arr.length; i++){ 
+    if(arr[i]==arr[i+1] || arr[i+1]==arr[i]){
+        narr.push(arr[i])
+    }
+}
+for(let i in narr){
+    for(let j in arr){
+        if(narr.includes(arr[j])==true){
+            delete arr[j]
+        }
+    }
+}
+let nstr=arr.join("")
+document.write("Single repeated Characters in a string :--: ","' <b><i>",nstr," </b>'")
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
