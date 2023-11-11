@@ -55,3 +55,21 @@ function StarPattern2(rows){
     
 }
 StarPattern2(5)
+
+console.log();
+/*
+Pattern:
+------------------------------
+*
+**
+***
+****
+*****
+-------------------------------
+*/
+let str=''
+for (let i =1;i<=5;i++){
+    str+='*'
+    
+    console.log(str);
+}
