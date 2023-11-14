@@ -111,3 +111,58 @@ function fullPattern(n){
 }
 
 fullPattern(10)
+
+
+console.log();
+/*
+Pattern:
+------------------------------
+* * * * * * * *
+* * * * * * * *
+* * * * * * * *
+* * * * * * * *
+* * * * * * * *
+* * * * * * * *
+* * * * * * * *
+* * * * * * * *
+-------------------------------
+*/
+
+function SquareShape(n){
+    let str=''
+    for (let i =0;i<n;i++){
+        str+='*  '
+    }
+    for(let i=0;i<n;i++){
+        console.log(str);
+    }
+}
+SquareShape(5)
+
+
+console.log();
+/*
+Pattern:
+------------------------------
+
+* * * * *
+ * * * * *
+  * * * * *
+   * * * * *
+
+-------------------------------
+*/
+function RhombusPattern(n){
+    let str=''
+    for(let i=0;i<n;i++){
+        str+='* '
+    }
+    let space=''
+    console.log(str);
+    for(let i=1;i<n;i++){
+        space+=' '
+        console.log(space+str);
+    }
+}
+
+RhombusPattern(5)
