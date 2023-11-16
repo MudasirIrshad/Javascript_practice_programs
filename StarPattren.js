@@ -165,4 +165,4 @@ function RhombusPattern(n){
     }
 }
 
-RhombusPattern(5)
+RhombusPattern(3)
