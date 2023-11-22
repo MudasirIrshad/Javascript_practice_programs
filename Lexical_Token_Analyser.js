@@ -6,8 +6,7 @@ function LecicalTokenAnalyser(str){
     let tokens={
         operator:['=','==','===','<','>','>=','<=',"!",'!=','!==','+','-','*','/'],
         separator:[',','(',')',';','{','}','[',']'],
-        number:['1','2','3','4','5','6','7','8','9','0'],
-        keyword:['if','while','else','for','return','function','let','var','const']
+        keyword:['if','while','else','for','of','return','function','let','var','const']
     }
 
     let operators=[]
@@ -25,7 +24,7 @@ function LecicalTokenAnalyser(str){
         else if(tokens.separator.includes(i)){
             separators.push(i)
         }
-        else if(tokens.number.includes(i)){
+        else if(parseInt(i)){
             numbers.push(i)
         }
         else if(tokens.keyword.includes(i)){
@@ -48,7 +47,7 @@ function LecicalTokenAnalyser(str){
 }
 
 
-LecicalTokenAnalyser("for ( var i of arr = ) { let numbers = [ 1 , 2 , 3 ] }")
+LecicalTokenAnalyser("for ( var i of arr) { let numbers = [ 10.00 , 20.5555 , 5555 , 2 , 3 ] }")
 
 
 
