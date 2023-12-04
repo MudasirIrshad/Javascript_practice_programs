@@ -39,9 +39,11 @@ function sevenBoom(arr) {
    }
 
 }
-sevenBoom([2, 6000.8, 9, 3])
 
 
-
-
+sevenBoom([2, 6, 7, 9, 3])
+sevenBoom([33, 68, 400, 5])
+sevenBoom([86, 48, 100, 66])
+sevenBoom([76, 55, 44, 32])
+sevenBoom([35, 4, 9, 37])
 
