@@ -4,4 +4,4 @@ let countryAreaPerc=((area/worldLandmas)*100).toFixed(2)
 return(`"${name} is ${countryAreaPerc}% of the total world's landmass"`);
 }
 
-console.log(areaOfCountry("USA", 9372610));
+console.log(areaOfCountry("USA", 3677649 ));
